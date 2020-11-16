@@ -1,1 +1,2 @@
 # powerXGym-server
+# PowerXGym-client
