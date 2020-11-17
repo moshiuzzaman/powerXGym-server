@@ -32,6 +32,6 @@ client.connect(err => {
 
 
 
-app.listen(procss.env.port || port, () => {
+app.listen(process.env.port || port, () => {
   console.log(`${port} is running`)
 })
