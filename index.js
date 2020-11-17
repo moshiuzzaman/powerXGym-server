@@ -24,7 +24,7 @@ client.connect(err => {
       classCollection.find()
       .toArray((err, result) => {res.send(result)})
   })
-  app.get("/ ", (req, res) => {
+  app.get("/AllPrices", (req, res) => {
     pricingCollection.find()
       .toArray((err, result) => {res.send(result)})
   })
@@ -32,6 +32,6 @@ client.connect(err => {
 
 
 
-app.listen(port, () => {
+app.listen(procss.env.port || port, () => {
   console.log(`${port} is running`)
 })
